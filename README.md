@@ -1,4 +1,7 @@
-# 🧠 Custom Knowledge LLM: Tony Stark Edition
+# 🧠 [Custom Knowledge LLM: Tony Stark Edition](https://huggingface.co/Avirallm/Custom-Knowledge-LLM-Tony-Stark-Edition)
+
+<img width="1200" height="400" alt="image" src="https://github.com/user-attachments/assets/d6a4e926-ac69-4211-857f-1c576cc77359" />
+
 
 This is a fine-tuned version of the [Qwen2.5-3B-Instruct](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct) large language model, trained specifically to answer questions related to **Tony Stark**, the legendary Marvel character. The project demonstrates how to adapt open-source instruction-tuned LLMs for domain-specific knowledge tasks using efficient fine-tuning methods.
 
@@ -76,12 +79,13 @@ Just ensure:
 from transformers import pipeline
 
 qa = pipeline(
-    model="./my_qwen",
-    tokenizer="./my_qwen",
-    device="cuda"
+    model="Avirallm/Custom-Knowledge-LLM-Tony-Stark-Edition",
+    tokenizer="Avirallm/Custom-Knowledge-LLM-Tony-Stark-Edition",
+    device="cuda"  # or "cpu" if not using GPU
 )
 
-qa("What is Tony Stark’s most advanced suit?")
+qa("List all Iron Man suits and their features.")
+
 
 ```
 
